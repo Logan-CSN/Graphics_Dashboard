@@ -1,0 +1,26 @@
+{
+  "name": "graphics-dashboard",
+  "version": "1.0.0",
+  "description": "Graphics Dashboard Electron App",
+  "main": "main.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^37.4.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.graphics.dashboard",
+    "productName": "Graphics Dashboard",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
