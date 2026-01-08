@@ -3491,6 +3491,12 @@
                       }
                     }
                   }
+
+                  // Update XML debug info if available
+                  if (data && data.xmlData) {
+                    console.log('[XML DEBUG] Graphics received data:', data.xmlData);
+                  }
+
                   try {
 
                     if (data.homeName) {
